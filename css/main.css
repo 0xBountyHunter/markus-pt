@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+
+:root {
+  --color-white: #fff;
+  --color-light: #eee;
+  --color-black: #000;
+  --color-blacky: #111;
+  --color-grey: #333;
+  --color-action: #D90429;
+  --measure: 60ch;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80px;
+  background-color: var(--color-light);
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.burger {
+  display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 2px;
+  background-color: var(--color-black);
+  margin: 5px;
+}
+
+@media only screen and (max-width: 750px) {
+  .list {
+    position: absolute;
+    right: 0;
+    height: calc(100vh - 80px);
+    top: 80px;
+    background-color: #5d4954;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 50vw;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform .5s ease-in;
+    transition: -webkit-transform .5s ease-in;
+    transition: transform .5s ease-in;
+    transition: transform .5s ease-in, -webkit-transform .5s ease-in;
+  }
+  .list li {
+    opacity: 0;
+  }
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.heading {
+  font-size: 28px;
+  letter-spacing: 1px;
+  margin-bottom: 1em;
+}
+
+.para {
+  max-width: var(--measure);
+}
+
+.home {
+  height: calc(100vh - 80px);
+  background-image: url("../img/victor-freitas-big.jpg");
+  background-position: cover;
+  position: relative;
+}
+
+.home-box {
+  position: absolute;
+  top: 40vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 3px;
+  padding: 1em 0 0;
+}
+
+.home-name {
+  color: var(--color-light);
+}
+
+.home-header {
+  font-size: 28px;
+  letter-spacing: 1px;
+  margin: .5em 0 1em;
+  color: var(--color-white);
+}
+
+.home .cta {
+  display: block;
+  background-color: var(--color-action);
+  color: var(--color-white);
+  padding: 1.5em;
+  width: 100%;
+}
+
+.secondary {
+  background-color: var(--color-blacky);
+  padding: 4em 1em;
+}
+
+.secondary .heading {
+  color: var(--color-white);
+}
+
+.secondary .para {
+  color: var(--color-light);
+}
+
+.secondary .para strong {
+  color: var(--color-white);
+}
+
+.tertiary .about {
+  padding: 4em 1em;
+  background-color: var(--color-light);
+}
+
+.tertiary .about .heading {
+  color: var(--color-black);
+}
+
+.tertiary .about .para {
+  color: var(--color-grey);
+}
+
+.pricing {
+  padding: 4em 1em;
+  background-color: var(--color-light);
+}
+
+.pricing .heading {
+  color: var(--color-black);
+  margin-bottom: 0.5em;
+}
+
+.pricing .para, .pricing .training__list, .pricing .pricing__list {
+  color: var(--color-grey);
+}
+
+.contact {
+  padding: 4rem 1em;
+  background-color: var(--color-blacky);
+}
+
+.contact .heading {
+  color: var(--color-white);
+}
+
+.contact a:link, .contact a:visited {
+  color: var(--color-action);
+}
+
+footer {
+  padding: 1em;
+}
+/*# sourceMappingURL=main.css.map */
