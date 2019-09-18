@@ -9,7 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Márkus-PT</title>
 </head>
 <body>
@@ -30,9 +31,9 @@
         </nav>
     </header>
     <main>
-        <section class="home">
+        <section class="home" >
             <div class="container">
-            <div class="home-box">
+            <div class="home-box" data-aos="fade-up">
                 <div>
                     <p class="home-name"><?php echo $lang['name']?></p>
                     <h1 class="home-header header"><?php echo $lang['home-header']?></h1>
@@ -43,13 +44,13 @@
             </div>
         </section>
         <section class="secondary" id="about">
-            <div class="container">
+            <div class="container"  data-aos="fade-in">
             <h2 class="heading"><?php echo $lang['sec-header']?></h2>
             <p class="para"><?php echo $lang['sec-para']?></p>
             </div>
         </section>
         <section class="tertiary">
-            <div class="container">
+            <div class="container" data-aos="fade-in">
             <div class="about">
                 <h2 class="heading"><?php echo $lang['ter-header']?></h2>
                 <p class="para"><?php echo $lang['ter-para']?></p>
@@ -61,7 +62,7 @@
             
         </section>
         <section class="pricing" id="pricing">
-            <div class="container">
+            <div class="container" data-aos="fade-in">
             <h2 class="heading"><?php echo $lang['qua-header']?></h2>
             <p class="para"><?php echo $lang['qua-para']?></p><br>
             <div class="lists">
@@ -82,10 +83,11 @@
             </div>
         </section>
         <section class="contact" id="contact">
-            <div class="container">
+            <div class="container" data-aos="fade-in">
                 <h2 class="heading"><?php echo $lang['qui-header']?></h2>
                 <a href="tel:+36703691271" class="tel">+36703691271</a>
                 <a href="mailto:markustraining21@gmail.com" class="email">markustraining21@gmail.com</a>
+                <a href="https://www.facebook.com/markusedzogyor" target="_blank"><img class="fb-img" src="img/facebook.svg">markusedzogyor</a>
             </div>
             
         </section>
@@ -94,5 +96,11 @@
         <p><?php echo $lang['footer'] ?></p>
     </footer>
     <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000
+        });
+    </script>
 </body>
 </html>

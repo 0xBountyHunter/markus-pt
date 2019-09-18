@@ -152,6 +152,12 @@ nav {
   width: calc( var(--measure) / 2);
 }
 
+@media screen and (max-width: 850px) {
+  .home-box {
+    margin-top: 15vh;
+  }
+}
+
 .home-box div {
   padding: 1em;
 }
@@ -238,6 +244,10 @@ nav {
   border-radius: 50%;
 }
 
+.para {
+  line-height: 1.75;
+}
+
 .pricing {
   background-color: var(--color-blacky);
 }
@@ -291,10 +301,10 @@ nav {
 .contact a:link, .contact a:visited {
   display: block;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1.5em;
   color: var(--color-action);
-  -webkit-transition: color .5s;
-  transition: color .5s;
+  -webkit-transition: color .3s;
+  transition: color .3s;
 }
 
 .contact a:hover, .contact a:active {
@@ -369,5 +379,9 @@ footer {
   .pricing, .contact, .secondary, .tertiary {
     padding: 5em 3em;
   }
+}
+
+.fb-img {
+  margin-right: .5rem;
 }
 /*# sourceMappingURL=main.css.map */

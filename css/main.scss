@@ -130,6 +130,9 @@ nav {
         border-radius: 3px;
         padding: 1em 0 0;
         width: calc( var(--measure) / 2 );
+        @media screen and (max-width: $bp-md) {
+            margin-top: 15vh;
+        }
         div {
             padding: 1em;
         }
@@ -205,6 +208,10 @@ nav {
     
 }
 
+.para {
+    line-height: 1.75;
+}
+
 .pricing {
     background-color: var(--color-blacky);
     .heading {
@@ -247,9 +254,9 @@ nav {
     a:link, a:visited {
         display: block;
         font-weight: bold;
-        font-size: 1.2em;
+        font-size: 1.5em;
         color: var(--color-action);
-        transition: color .5s;
+        transition: color .3s;
     }
     a:hover, a:active {
         color: var(--color-hover);
@@ -303,4 +310,8 @@ footer {
     .pricing, .contact, .secondary, .tertiary {
         padding: 5em 3em;
     }
+}
+
+.fb-img {
+    margin-right: .5rem;
 }
