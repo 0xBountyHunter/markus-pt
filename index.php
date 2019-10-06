@@ -16,17 +16,13 @@
 <body>
     <header>
         <nav>
+            <div class="nav-wrapper">
             <a href="#top" class="logo"><?php echo $lang['logo']?></a>
             <ul class="list">
                 <li><a href="#"><a href="index.php?lang=en"><?php echo $lang['eng'] ?></a>&nbsp;|&nbsp;<a href="index.php?lang=hu"><?php echo $lang['hun']?></a></li>
-                <li><a href="#about"><?php echo $lang['about']?></a></li>
                 <li><a href="#pricing"><?php echo $lang['coaching']?></a></li>
                 <li><a href="#contact"><?php echo $lang['contact']?></a></li>
             </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
             </div>
         </nav>
     </header>
@@ -74,9 +70,9 @@
                 </ul>
                 <ul class="pricing__list">
                     <li>3000Ft</li>
-                    <li>20000Ft</li>
-                    <li>10000Ft</li>
-                    <li>20000Ft</li>
+                    <li>27000Ft</li>
+                    <li>14000Ft</li>
+                    <li>27000Ft</li>
                 </ul>
             </div>
             <p  class="cta-sale"><?php echo $lang['sale']?></p>
@@ -95,7 +91,6 @@
     <footer>
         <p><?php echo $lang['footer'] ?></p>
     </footer>
-    <script src="app.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({

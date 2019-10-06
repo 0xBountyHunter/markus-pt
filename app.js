@@ -1,4 +1,4 @@
-const navSlide = () => {
+/* const navSlide = () => {
     const burger = document.querySelector('.burger');
     const list = document.querySelector('.list');
     const links = document.querySelectorAll('.list li');
@@ -7,7 +7,7 @@ const navSlide = () => {
     burger.addEventListener('click', () => {
         // toggle nav
         list.classList.toggle('nav-active');
-
+        list.classList.toggle('mobile-list');
         // animate links
         links.forEach((link, index) => {
             if(link.style.animation) {
@@ -24,4 +24,4 @@ const navSlide = () => {
 const app = () => {
     navSlide();
 }
-app();
+app(); */

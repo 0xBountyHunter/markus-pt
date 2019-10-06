@@ -19,17 +19,20 @@ $bp-lg: 1200px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 html {
     scroll-behavior: smooth;
+    
 }
+
 
 body {
     font-family: 'Raleway', sans-serif;
-    overflow-x: hidden;
     line-height: 1.5;
     font-size: 90%;
+    overflow-x: hidden;
     @media only screen and (min-width: $bp-sm) {
         font-size: 110%;
     }
@@ -52,59 +55,38 @@ a {
 
 nav {
     display: flex;
+    align-items: center;
     height: 80px;
     background-color: var(--color-light);
-    justify-content: space-around;
+}
+
+.nav-wrapper {
+    display: flex;
+    margin: 0 auto;
+    width: 90vw;
+    max-width: $bp-lg;
+    justify-content: space-between;
     align-items: center;
+}
+
+.logo {
+    margin-right: auto;
 }
 
 .list {
     display: flex;
-    font-size: .7em;
     text-transform: uppercase;
-    width: 30em;
-    max-width: var(--measure);
-    justify-content: space-between;
-    a:active, a:hover {
-        text-decoration: underline;
-    }
-}
-
-.burger {
-    display: none;
-}
-
-.burger div {
-    width: 25px;
-    height: 2px;
-    background-color: var(--color-black);
-    margin: 5px;
-    transition: all .5s;
-}
-
-@media only screen and (max-width: 750px) {
-    .list {
-        position: absolute;
-        right: 0;
-        height: calc(100vh - 80px);
-        top: 80px;
-        background-color: var(--color-light);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        width: 50vw;
-        transform: translateX(100%);
-        transition: all .5s ease-in;
-        li {
-            opacity: 0;
+    font-size: .7em;
+    li {
+        margin-right: 1rem;
+        @media screen and (min-width: $bp-sm) {
+            margin-right: 2.5rem;
         }
     }
-    .burger {
-        display: block;
-        cursor: pointer;
-    }
 }
+
+
+
 
 
 
@@ -112,9 +94,7 @@ nav {
     font-size: 1.75em;
     margin-bottom: 1em;
     font-weight: bold;
-    @media only screen and (min-width: $bp-md) {
-        
-    }
+
 }
 
 
@@ -233,7 +213,7 @@ nav {
     .cta-sale {
         padding: 0.75em 1.5em;
         margin: 2em auto 0;
-        width: 25rem;
+        width: 15rem;
         background-color: var(--color-light);
         display: inline-block;
         font-weight: bold;
@@ -270,34 +250,6 @@ footer {
     text-align: center;
 }
 
-.nav-active {
-    transform: translateX(0%);
-}
-
-@keyframes navLinkFade {
-    from {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-.toggle .line1 {
-    position: absolute;
-    top: 35px;
-    transform: rotate(135deg);
-}
-.toggle .line2 {
-    opacity: 0;
-}
-.toggle .line3 {
-    position: absolute;
-    top: 35px;
-    transform: rotate(-135deg);
-}
 
 .pricing, .contact, .secondary, .tertiary {
     padding: 3em 1em;

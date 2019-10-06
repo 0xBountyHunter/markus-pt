@@ -1,6 +1,6 @@
 <?php
     $lang = array(
-        "logo" => "Márkus PT",
+        "logo" => "Márkus edző",
         "eng" => "eng",
         "hun" => "hun",
         "about" => "rólam",
